@@ -1,6 +1,6 @@
 # Jira Recently Assigned Issues Command
 
-내게 할당되고 OPEN 상태인 Jira 이슈를 최근 수정된 순서대로 10개 조회하는 명령어
+내게 할당되고 아직 수정되지 않았고, 작업 시작 전인 Jira 이슈를 최근 수정된 순서대로 10개 조회하는 명령어
 
 ## Usage
 
