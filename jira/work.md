@@ -13,7 +13,6 @@ jira_to_commit ISSUE-123
 1. Fetches the specified Jira issue using Atlassian MCP
 2. Analyzes the issue summary and description
 3. Makes necessary code modifications based on the issue content
-4. Creates a git commit with format: "ISSUE-123 issue summary"
 
 ## Implementation
 
@@ -35,12 +34,8 @@ Given a Jira issue key (e.g., ISSUE-123), you will:
    - Search the codebase to understand the relevant files
    - Make necessary code modifications
    - Follow the project's coding standards from CLAUDE.md
-   - Test the changes if possible
-
-4. **Create Commit**: 
-   - Stage the changes with `git add`
-   - Create commit with message format: "{ISSUE-KEY} {issue summary}"
-   - Include co-author attribution as per CLAUDE.md guidelines
+   - Check code style with `npm run lint`
+   - Test the changes if possible with playwright mcp
 
 ## Error Handling
 
